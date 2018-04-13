@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_homefragment_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+    <RadioGroup
+        android:id="@+id/homefragment_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFF99"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/wechat"
+            style="@style/homefragmentradioButtonstyle"
+            android:drawableTop="@drawable/home"
+            android:text="聊天"
+            android:textColor="#ffffff"
+            />
+
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/homefragmentradioButtonstyle"
+            android:drawableTop="@drawable/radiobutton_selector"
+            android:text="首页"
+            android:textColor="#ffffff"
+
+            />
+
+        <RadioButton
+            android:id="@+id/music"
+            style="@style/homefragmentradioButtonstyle"
+            android:drawableTop="@drawable/home"
+            android:text="音乐圈"
+            android:textColor="#ffffff"
+            />
+
+        <RadioButton
+            android:id="@+id/setting"
+            style="@style/homefragmentradioButtonstyle"
+            android:drawableTop="@drawable/setting"
+            android:text="设置"
+            android:textColor="#ffffff"
+            />
+
+
+    </RadioGroup>
+
+
+</RelativeLayout>

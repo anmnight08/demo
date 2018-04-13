@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#454545"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="35dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            style="@style/homepagertextStyle"
+            android:text="PK天梯" />
+
+        <TextView
+            style="@style/homepagertextStyle"
+            android:text="名师" />
+
+        <TextView
+            style="@style/homepagertextStyle"
+            android:text="评委" />
+
+        <TextView
+            style="@style/homepagertextStyle"
+            android:text="人气" />
+
+        <TextView
+            style="@style/homepagertextStyle"
+            android:text="单曲" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:text="音乐名人榜"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#ed1c24"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="评委模式"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_press" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="#99D9EA"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="PK模式"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/setting_press" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#CFCFCF"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            style="@style/homepagerLLstyle"
+            android:layout_gravity="center">
+
+            <ImageView style="@style/homepagerivstyle" />
+
+            <TextView
+                style="@style/homepagertextsstyle"
+                android:text="多人房" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            style="@style/homepagerLLstyle"
+            android:layout_gravity="center">
+
+            <ImageView style="@style/homepagerivstyle" />
+
+            <TextView
+                style="@style/homepagertextsstyle"
+
+                android:text="学音乐" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/homepagerLLstyle"
+            android:layout_gravity="center">
+
+            <ImageView style="@style/homepagerivstyle" />
+
+            <TextView
+                style="@style/homepagertextsstyle"
+                android:text="练歌房" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
